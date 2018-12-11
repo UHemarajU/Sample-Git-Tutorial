@@ -8,8 +8,11 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
+    @IBOutlet weak var resultLbl: UILabel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,10 +27,19 @@ class ViewController: UIViewController {
         print(optionalStr!) //Forced unwrapping
         
         
+        //Automatic  unwrapping
+        var optionalStr2: String!
+        optionalStr2 = "This is optional string"
+        print(optionalStr2)
+        
         //Addition
         var sum: Int = 0
         sum = add(a: 5, b: 6)
+        resultLbl?.text = String(sum)
         print(sum)
+        
+        
+        
     }
 
     func add(a:Int, b:Int) -> Int {
