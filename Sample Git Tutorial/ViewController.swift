@@ -18,7 +18,10 @@ class ViewController: UIViewController {
         welcome = "Hello World"
         print(welcome)
      
-        
+        //This is optional String
+        var optionalStr: String?
+        optionalStr = "This is optional String"
+        print(optionalStr!) //Forced unwrapping
     }
 
   
