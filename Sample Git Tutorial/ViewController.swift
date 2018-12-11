@@ -22,9 +22,18 @@ class ViewController: UIViewController {
         var optionalStr: String?
         optionalStr = "This is optional String"
         print(optionalStr!) //Forced unwrapping
+        
+        
+        //Addition
+        var sum: Int = 0
+        sum = add(a: 5, b: 6)
+        print(sum)
     }
 
-  
+    func add(a:Int, b:Int) -> Int {
+        
+        return a+b
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
